@@ -1,0 +1,37 @@
+/* Basic page setup */
+body { 
+  margin: 0; 
+  overflow: hidden; 
+  font-family: sans-serif;
+}
+
+/* Mobile button container */
+#mobile-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+/* Mobile buttons */
+#mobile-controls button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover / touch effect */
+#mobile-controls button:active,
+#mobile-controls button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
